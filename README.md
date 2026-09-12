@@ -116,26 +116,28 @@ EDIATH-Agentic-AI/
 ```
 
 ### 🛠️ Tech Stack
-Language: Python 3.10+
 
-LLM Runtime: llama-cpp-python (GGUF)
+- Language: Python 3.10+
 
-Voice: Speech-to-Text + Text-to-Speech pipeline
+- LLM Runtime: llama-cpp-python (GGUF)
 
-Architecture: Modular, event-driven, multi-agent
+- Voice: Speech-to-Text + Text-to-Speech pipeline
+
+- Architecture: Modular, event-driven, multi-agent
 
 ### 🤝 Contributing
+
 Contributions are welcome! Please open an issue first to discuss major changes.
 
-Fork the repo
+- Fork the repo
 
-Create your feature branch (git checkout -b feature/amazing-feature)
+- Create your feature branch (git checkout -b feature/amazing-feature)
 
-Commit your changes (git commit -m 'Add amazing feature')
+- Commit your changes (git commit -m 'Add amazing feature')
 
-Push to the branch (git push origin feature/amazing-feature)
+- Push to the branch (git push origin feature/amazing-feature)
 
-Open a Pull Request
+- Open a Pull Request
 
 ### 📜 License
 This project is licensed under the MIT License — see the LICENSE file for details.
