@@ -1,81 +1,47 @@
-<!-- Project Header Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:36BCF7,100:8A2BE2&height=200&section=header&text=EDIATH&fontSize=80&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Autonomous%20AI%20System&descAlignY=58&descSize=24" width="100%" />
-  
-  <br>
 
-  <h3>🤖 Production-Ready Multi-Agent AI System</h3>
-  
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/LLM-GGUF-FF6F00?style=for-the-badge&logo=openai&logoColor=white" />
-    <img src="https://img.shields.io/badge/Architecture-Multi--Agent-8A2BE2?style=for-the-badge&logo=diagram&logoColor=white" />
-    <img src="https://img.shields.io/badge/Status-Production%20Ready-00C853?style=for-the-badge&logo=checkmarx&logoColor=white" />
-  </p>
+# 🧠 EDIATH Autonomous AI System
+
+**Production-ready multi-agent AI with voice interaction, local LLM reasoning, and robust agent orchestration.**
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/Status-Production--Ready-00C853?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-MIT-8A2BE2?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-36BCF7?style=for-the-badge)](CONTRIBUTING.md)
+
 </div>
 
-<br>
+---
 
-<!-- Moving Animated Divider -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
+## 📖 Overview
 
-<!-- Overview Section -->
-<h2 align="center">📖 Overview</h2>
+**EDIATH** is an autonomous, production-grade multi-agent AI system designed to reason, orchestrate tasks, and interact via voice. It runs locally using **GGUF-based LLMs**, ensuring privacy, low latency, and zero reliance on external APIs.
 
-<p align="center">
-  <b>EDIATH</b> is a production-ready, autonomous multi-agent AI system designed for real-world deployment. It combines local LLM reasoning (GGUF) with a voice-enabled UI, robust agent orchestration, and enterprise-grade stability features like graceful shutdown and crash-free execution loops.
-</p>
+Built for stability, EDIATH features **graceful shutdown**, **loop prevention**, and a **crash-resistant architecture** — making it suitable for always-on deployment.
 
-<br>
+---
 
-<!-- Moving Animated Divider -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
+## ✨ Key Features
 
-<!-- Key Features Grid -->
-<h2 align="center">✨ Key Features</h2>
+| Feature | Description |
+| :--- | :--- |
+| 🎙️ **Voice UI + Backend** | Full-duplex voice interaction with a dedicated backend service. |
+| 🧠 **LLM Reasoning (GGUF)** | Runs local quantized models via `llama-cpp` for fast, private inference. |
+| 🤖 **Agent Orchestration** | Multi-agent coordination for complex, multi-step task execution. |
+| 🛡️ **Graceful Shutdown** | Clean resource release and state saving on exit. |
+| 🔁 **No Crashes / Loops** | Defensive architecture prevents infinite loops and unexpected failures. |
+| ⚡ **Dual-Mode Launcher** | Run as a full voice UI or a headless backend orchestrator. |
 
-<table align="center" width="100%" style="border-collapse: collapse; border: none;">
-  <tr>
-    <td width="50%" align="center" style="padding: 15px;">
-      <h3>🎙️ Voice UI + Backend</h3>
-      <p><i>Full-duplex voice interface backed by a powerful multi-agent backend architecture.</i></p>
-    </td>
-    <td width="50%" align="center" style="padding: 15px;">
-      <h3>🧠 LLM Reasoning (GGUF)</h3>
-      <p><i>Runs quantized GGUF models locally for fast, private, and offline reasoning capabilities.</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" style="padding: 15px;">
-      <h3>🔗 Agent Orchestration</h3>
-      <p><i>Coordinated multi-agent system that delegates tasks, shares context, and solves complex goals.</i></p>
-    </td>
-    <td width="50%" align="center" style="padding: 15px;">
-      <h3>🛡️ Graceful Shutdown</h3>
-      <p><i>Safe resource cleanup and state preservation during termination for reliable operation.</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" style="padding: 15px;">
-      <h3>♻️ No Crashes / No Loops</h3>
-      <p><i>Designed with robust error handling to prevent infinite loops and unexpected crashes.</i></p>
-    </td>
-    <td width="50%" align="center" style="padding: 15px;">
-      <h3>⚡ Production Ready</h3>
-      <p><i>Stable, tested, and optimized for real-world deployment environments.</i></p>
-    </td>
-  </tr>
-</table>
+---
 
-<br>
+## 🚀 Quick Start
 
-<!-- Moving Animated Divider -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
+### Prerequisites
+- Python **3.10+**
+- A GGUF-format LLM file (e.g., `llama-3-8b-instruct.Q4_K_M.gguf`)
+- A working microphone (for UI mode)
 
-<!-- Quick Start Section -->
-<h2 align="center">🚀 Quick Start</h2>
-
-<h3>1. Installation</h3>
+### Installation
 
 ```bash
 # Clone the repository
@@ -84,3 +50,95 @@ cd EDIATH-Agentic-AI
 
 # Install in editable mode
 pip install -e .
+Run
+bash
+python launcher.py --mode ui
+🎛️ Modes
+EDIATH supports two distinct runtime modes:
+
+1. ui (Default)
+Launches the full voice UI + backend. This is the recommended mode for interactive use.
+
+bash
+python launcher.py --mode ui
+2. backend
+Runs the headless orchestrator only. Ideal for servers, automation pipelines, or API integration.
+
+bash
+python launcher.py --mode backend
+🔍 Optional Checks
+Verify your environment and code integrity before running:
+
+bash
+# Check for missing dependencies
+python launcher.py --check-deps
+
+# Run syntax validation across all scripts
+python scripts/check_syntax.py
+🏗️ Architecture
+text
+┌─────────────────────────────────────────────────────────┐
+│                     EDIATH Launcher                      │
+│                  (launcher.py --mode)                    │
+└───────────────┬─────────────────────────┬───────────────┘
+                │                         │
+        ┌───────▼───────┐         ┌───────▼───────┐
+        │   Voice UI    │         │   Backend     │
+        │  (Frontend)   │◄───────►│ Orchestrator  │
+        └───────┬───────┘         └───────┬───────┘
+                │                         │
+                │                 ┌───────▼───────┐
+                │                 │  Agent Pool   │
+                │                 │ (Multi-Agent) │
+                │                 └───────┬───────┘
+                │                         │
+                └─────────────┬───────────┘
+                              │
+                      ┌───────▼───────┐
+                      │  GGUF LLM     │
+                      │  (Local LLM)  │
+                      └───────────────┘
+📁 Project Structure
+text
+EDIATH-Agentic-AI/
+├── launcher.py              # Main entry point (UI / backend modes)
+├── scripts/
+│   └── check_syntax.py      # Syntax validation utility
+├── src/
+│   ├── agents/              # Multi-agent orchestration logic
+│   ├── llm/                 # GGUF LLM wrapper & inference
+│   ├── ui/                  # Voice UI components
+│   └── backend/             # Headless orchestrator
+├── pyproject.toml           # Package configuration
+└── README.md
+🛠️ Tech Stack
+Language: Python 3.10+
+
+LLM Runtime: llama-cpp-python (GGUF)
+
+Voice: Speech-to-Text + Text-to-Speech pipeline
+
+Architecture: Modular, event-driven, multi-agent
+
+🤝 Contributing
+Contributions are welcome! Please open an issue first to discuss major changes.
+
+Fork the repo
+
+Create your feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+📜 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+<div align="center">
+Built with 🧠 by Srijan Singh
+
+Autonomous AI that reasons, orchestrates, and executes.
+
+</div> ```
