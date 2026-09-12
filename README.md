@@ -142,9 +142,30 @@ Contributions are welcome! Please open an issue first to discuss major changes.
 ### 📜 License
 This project is licensed under the MIT License — see the LICENSE file for details.
 
+---
+
 <div align="center">
-Built with 🧠 by Srijan Singh
 
-Autonomous AI that reasons, orchestrates, and executes.
+  <h3>🧠 Built by <a href="https://github.com/BLACK-DEVIL-8212">Srijan Singh</a></h3>
+  
+  <p><i>Autonomous AI that reasons, orchestrates, and executes.</i></p>
+  
+  <br>
+  
+  <a href="https://github.com/BLACK-DEVIL-8212/EDIATH-Agentic-AI/stargazers">
+    <img src="https://img.shields.io/github/stars/BLACK-DEVIL-8212/EDIATH-Agentic-AI?style=for-the-badge&color=36BCF7&labelColor=000000" alt="Stars" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/BLACK-DEVIL-8212/EDIATH-Agentic-AI/network/members">
+    <img src="https://img.shields.io/github/forks/BLACK-DEVIL-8212/EDIATH-Agentic-AI?style=for-the-badge&color=8A2BE2&labelColor=000000" alt="Forks" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/BLACK-DEVIL-8212/EDIATH-Agentic-AI/issues">
+    <img src="https://img.shields.io/github/issues/BLACK-DEVIL-8212/EDIATH-Agentic-AI?style=for-the-badge&color=00C853&labelColor=000000" alt="Issues" />
+  </a>
 
-</div> 
+  <br><br>
+  
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:36BCF7,100:8A2BE2&height=120&section=footer&text=Reason.%20Orchestrate.%20Execute.&fontSize=18&fontColor=ffffff&fontAlignY=75&animation=twinkling" width="100%" />
+
+</div>
