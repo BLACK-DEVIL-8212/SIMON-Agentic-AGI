@@ -124,7 +124,7 @@ Voice: Speech-to-Text + Text-to-Speech pipeline
 
 Architecture: Modular, event-driven, multi-agent
 
-🤝 Contributing
+### 🤝 Contributing
 Contributions are welcome! Please open an issue first to discuss major changes.
 
 Fork the repo
@@ -137,7 +137,7 @@ Push to the branch (git push origin feature/amazing-feature)
 
 Open a Pull Request
 
-📜 License
+### 📜 License
 This project is licensed under the MIT License — see the LICENSE file for details.
 
 <div align="center">
@@ -145,4 +145,4 @@ Built with 🧠 by Srijan Singh
 
 Autonomous AI that reasons, orchestrates, and executes.
 
-</div> ```
+</div> 
